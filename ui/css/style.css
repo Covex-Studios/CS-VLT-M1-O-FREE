@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Digital7';
+  src: url('../font/digital7.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#device {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  width: 260px;
+  aspect-ratio: 442 / 825;
+  background-image: url("../img/device.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  pointer-events: none;
+}
+
+.screen-overlay {
+  position: absolute;
+  top: 7%;
+  left: 9.5%;
+  width: 81%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vlt-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#vlt-number {
+  font-family: Digital7;
+  font-size: 100px;
+  font-weight: 900;
+  text-shadow: 0 0 12px rgba(0,0,0,0.8);
+}
+
+#vlt-percent {
+  font-family: Digital7;
+  font-size: 65px;
+  text-shadow: 0 0 12px rgba(0,0,0,0.8);
+  margin-top: 8px;
+}
+
+.status-below {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 6px 16px;
+  border-radius: 14px;
+  font-weight: 800;
+  font-size: 16px;
+  background: rgba(0,0,0,0.4);
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 7px 16px;
+  border-radius: 10px;
+  font-size: 13px;
+  background: rgba(0, 0, 0, 0.85);
+  color: #ffffff;
+}
